@@ -1,7 +1,10 @@
 package pro.sky.homework_2_11.shop.service;
 
-import org.springframework.stereotype.Service;
+import pro.sky.homework_2_11.shop.base.Product;
 
-@Service
-public class ProductService {
+import java.util.Collection;
+
+public interface ProductService {
+    void addProduct(int... id);
+    Collection<Product> get();
 }
