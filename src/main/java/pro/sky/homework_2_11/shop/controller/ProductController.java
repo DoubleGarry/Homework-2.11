@@ -18,7 +18,7 @@ public class ProductController {
         this.orderService = orderService;
     }
 
-    @GetMapping(value = "add")
+    @GetMapping(value = "/add")
     public String addProduct(@RequestParam(value = "id")int... id){
         orderService.addProduct(id);
         if(id.length==1){
