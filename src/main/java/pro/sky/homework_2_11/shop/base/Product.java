@@ -15,7 +15,8 @@ public class Product {
     public Product(int id) {
         this.id = id;
     }
+    @Override
     public String toString(){
-        return "ID-" + id;
+        return "ID - " + id;
     }
 }
